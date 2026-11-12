@@ -43,15 +43,19 @@ class MainActivity : Activity() {
         super.onCreate(savedInstanceState)
         EventLog.add(this, "ACTIVITY onCreate")
         ButtonService.clearIfNewBoot(this)
+        // 앱을 처음 열었을 때는 사용법을 먼저 보여 준다 (이후엔 '도움말' 버튼)
+        if (savedInstanceState == null && !GuideActivity.isSeen(this)) {
+            startActivity(Intent(this, GuideActivity::class.java))
+        }
 
         val root = LinearLayout(this).apply {
             orientation = LinearLayout.VERTICAL
             setPadding(32, 32, 32, 32)
         }
 
-        serviceStatus = TextView(this).apply { textSize = 18f }
+        serviceStatus = TextView(this).apply { textSize = 28f }
         detectStatus = TextView(this).apply {
-            textSize = 26f
+            textSize = 40f
             typeface = Typeface.DEFAULT_BOLD
             gravity = Gravity.CENTER
             setPadding(24, 48, 24, 48)
@@ -60,9 +64,14 @@ class MainActivity : Activity() {
         val buttons = LinearLayout(this).apply { orientation = LinearLayout.HORIZONTAL }
         fun button(label: String, action: () -> Unit) = Button(this).apply {
             text = label
+            textSize = 24f
+            isAllCaps = false
+            minHeight = 110
             setOnClickListener { action() }
             buttons.addView(this, LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f))
         }
+        button("도움말") { startActivity(Intent(this, GuideActivity::class.java)) }
+        button("신고 메시지 설정") { startActivity(Intent(this, SettingsActivity::class.java)) }
         button("접근성 설정 열기") {
             try {
                 startActivity(Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS))
@@ -85,7 +94,7 @@ class MainActivity : Activity() {
 
         logView = TextView(this).apply {
             typeface = Typeface.MONOSPACE
-            textSize = 12f
+            textSize = 18f
             setPadding(8, 16, 8, 16)
         }
         scroll = ScrollView(this).apply { addView(logView) }

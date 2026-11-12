@@ -1,14 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- 기본 아이콘: 파란 둥근 사각형 + 흰 원 -->
+<!--
+  앱 아이콘: Pleos 기본 앱 아이콘과 같은 어두운 회색 사각형 + 흰색 연락처(주소록) 모양.
+  독(dock)과 앱 목록에 같은 아이콘이 쓰인다.
+-->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
     android:width="108dp"
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
+
+    <!-- 배경: 위가 살짝 밝은 회색 그라데이션 -->
+    <path android:pathData="M4,0h100a4,4 0,0 1,4 4v100a4,4 0,0 1,-4 4h-100a4,4 0,0 1,-4 -4v-100a4,4 0,0 1,4 -4z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="0" android:startY="0"
+                android:endX="0" android:endY="108"
+                android:startColor="#4A4A4A"
+                android:endColor="#323232" />
+        </aapt:attr>
+    </path>
+
+    <!-- 주소록 표지 (둥근 사각형 테두리) -->
     <path
-        android:fillColor="#4285F4"
-        android:pathData="M22,0h64a22,22 0,0 1,22 22v64a22,22 0,0 1,-22 22h-64a22,22 0,0 1,-22 -22v-64a22,22 0,0 1,22 -22z" />
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="4.5"
+        android:fillColor="#00000000"
+        android:pathData="M42,27h28a8,8 0,0 1,8 8v38a8,8 0,0 1,-8 8h-28a8,8 0,0 1,-8 -8v-38a8,8 0,0 1,8 -8z" />
+
+    <!-- 왼쪽 스프링 고리 3개 -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="4.5"
+        android:strokeLineCap="round"
+        android:pathData="M27,40h10 M27,54h10 M27,68h10" />
+
+    <!-- 사람 머리 -->
     <path
         android:fillColor="#FFFFFF"
-        android:pathData="M54,54m-24,0a24,24 0,1 1,48 0a24,24 0,1 1,-48 0" />
+        android:pathData="M56,44m-6.5,0a6.5,6.5 0,1 1,13 0a6.5,6.5 0,1 1,-13 0" />
+
+    <!-- 사람 어깨 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M44,62a12,10 0,0 1,24 0z" />
+
+    <!-- 아래 줄 2개 -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"
+        android:pathData="M45,68h22 M45,75h22" />
 </vector>

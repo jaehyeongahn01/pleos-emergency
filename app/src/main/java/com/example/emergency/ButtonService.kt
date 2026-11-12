@@ -109,9 +109,11 @@ class ButtonService : AccessibilityService() {
         super.onDestroy()
     }
 
-    /** 실제 신고 전송이 붙을 자리. 지금은 기록만 한다. */
+    /** 신고 메시지를 만든다. 실제 발송은 아직 없다 (ReportMessage.onDetected 참고). */
     private fun onEmergencyDetected() {
-        // TODO: GPS/차량정보 수집 후 관제 서버로 전송 (현재는 미구현)
+        runCatching { ReportMessage.onDetected(this, System.currentTimeMillis()) }
+            .onFailure { EventLog.add(this, "REPORT 메시지 생성 실패: ${it.javaClass.simpleName}") }
+        // TODO: GPS 위치 연동, 메시지 실제 발송 (발송 방식 결정 후)
     }
 
     private fun isMute(code: Int) =

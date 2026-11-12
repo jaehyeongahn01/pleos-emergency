@@ -38,6 +38,20 @@
             </intent-filter>
         </receiver>
 
+        <!-- 사용법 안내: 짧은 설명 화면이라 주행 중에도 볼 수 있게 DO 선언 -->
+        <activity
+            android:name=".GuideActivity"
+            android:exported="false">
+            <meta-data
+                android:name="distractionOptimized"
+                android:value="true" />
+        </activity>
+
+        <!-- 신고 메시지 설정: 키보드 입력이 필요하므로 정차 중에만 사용 (DO 선언 안 함) -->
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false" />
+
         <service
             android:name=".ButtonService"
             android:exported="true"
