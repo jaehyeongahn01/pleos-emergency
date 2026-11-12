@@ -1,0 +1,22 @@
+# Gradle / Android Studio
+*.iml
+.gradle
+.kotlin
+/local.properties
+/.idea
+/build
+/app/build
+/captures
+.externalNativeBuild
+.cxx
+
+# macOS
+.DS_Store
+
+# 서명 키와 비밀번호 (절대 커밋하지 않음)
+keystore.properties
+*.jks
+*.keystore
+
+# 에이전트 작업용 임시 파일
+/.agents

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 기본 아이콘: 파란 둥근 사각형 + 흰 원 -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:fillColor="#4285F4"
+        android:pathData="M22,0h64a22,22 0,0 1,22 22v64a22,22 0,0 1,-22 22h-64a22,22 0,0 1,-22 -22v-64a22,22 0,0 1,22 -22z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,54m-24,0a24,24 0,1 1,48 0a24,24 0,1 1,-48 0" />
+</vector>

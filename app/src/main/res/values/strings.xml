@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="a11y_label">Emergency 버튼 감지</string>
+    <string name="a11y_description">운전 중 핸들의 음소거 버튼 길게 누름을 감지합니다. 볼륨/미디어/음소거 키 외의 입력은 읽지 않으며, 화면 내용도 읽지 않습니다.</string>
+</resources>
