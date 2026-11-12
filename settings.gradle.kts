@@ -21,5 +21,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Emergency"
+rootProject.name = "강도 몰래 신고"
 include(":app")

@@ -21,8 +21,8 @@ android {
         minSdk = 28
         targetSdk = 34
         // 업데이트할 때마다 versionCode 를 1씩 올리고 versionName 을 바꾼다 (CHANGELOG.md 참고)
-        versionCode = 1
-        versionName = "0.1.0"
+        versionCode = 2
+        versionName = "0.1.1"
     }
 
     signingConfigs {

@@ -32,7 +32,7 @@ class ProbeService : Service() {
         )
         val notification = Notification.Builder(this, CHANNEL_ID)
             .setSmallIcon(android.R.drawable.ic_menu_info_details)
-            .setContentTitle("Emergency BootProbe")
+            .setContentTitle(getString(R.string.app_name))
             .setContentText("실행 중")
             .build()
         startForeground(NOTIFICATION_ID, notification, ServiceInfo.FOREGROUND_SERVICE_TYPE_SPECIAL_USE)

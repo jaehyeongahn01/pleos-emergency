@@ -1,8 +1,10 @@
-# Pleos Emergency (가칭)
+# 강도 몰래 신고
+
+**팀 원형교차로**
 
 > 택시 기사가 위협받는 상황에서, 핸들의 음소거 버튼만 눌러 강도에게 들키지 않고 긴급 신고하는 Pleos Connect 차량용 앱
 
-현재 버전은 **0.1.0 (핵심 감지 기능 검증 단계)** 입니다. 계속 업데이트하고 있으며, 변경 내용은 [CHANGELOG.md](CHANGELOG.md)에 기록합니다.
+현재 버전은 **0.1.1 (핵심 감지 기능 검증 단계)** 입니다. 계속 업데이트하고 있으며, 변경 내용은 [CHANGELOG.md](CHANGELOG.md)에 기록합니다.
 
 ---
 
@@ -10,11 +12,9 @@
 
 | 항목 | 경로 |
 |---|---|
-| release APK | [`apk/TEAM_PleosEmergency_release.apk`](apk/TEAM_PleosEmergency_release.apk) |
+| release APK | [`apk/원형교차로_강도몰래신고_release.apk`](apk/원형교차로_강도몰래신고_release.apk) |
 | 패키지명 | `com.example.emergency` |
-| 버전 | 0.1.0 (versionCode 1) |
-
-> 팀명(`TEAM`)과 앱 이름(`PleosEmergency`)은 임시값이며, 확정되면 APK 파일명과 함께 바꿀 예정입니다.
+| 버전 | 0.1.1 (versionCode 2) |
 
 ## 한눈에 보기
 
@@ -59,7 +59,7 @@
 ### 1. 설치
 
 ```bash
-adb install apk/TEAM_PleosEmergency_release.apk
+adb install apk/원형교차로_강도몰래신고_release.apk
 ```
 
 ### 2. 앱을 한 번 실행
