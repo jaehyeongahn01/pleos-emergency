@@ -64,7 +64,7 @@
 
 <table>
 <tr>
-<td width="50%" align="center"><img src="docs/images/overlay_before.png" alt="MUTE 4회 입력 전"><br><b>MUTE 4회 입력 전</b></td>
+<td width="50%" align="center"><img src="docs/images/overlay_before_final.png" alt="MUTE 4회 입력 전"><br><b>MUTE 4회 입력 전</b></td>
 <td width="50%" align="center"><img src="docs/images/overlay_dot.png" alt="MUTE 4회 입력 후"><br><b>MUTE 4회 입력 후</b></td>
 </tr>
 </table>
