@@ -16,6 +16,10 @@
 
 <img src="docs/images/gangdo_main.png" width="860" alt="강도 몰래 신고 메인 이미지">
 
+<video src="https://github.com/jaehyeongahn01/pleos-emergency/raw/main/docs/pleos-emergency_upload/docs/demo/gangdo_main_mov.mp4" width="860" controls muted></video>
+
+**[▶ 시연 영상 보기](docs/pleos-emergency_upload/docs/demo/gangdo_main_mov.mp4)**
+
 </div>
 
 ---
