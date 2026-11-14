@@ -14,11 +14,7 @@
 ![Kotlin](https://img.shields.io/badge/Kotlin-2.0.21-7F52FF?logo=kotlin&logoColor=white)
 ![Version](https://img.shields.io/badge/Version-0.2.0-E5484D)
 
-<!-- 대표 이미지 (비워 둠) -->
-<img src="" width="860" alt="">
-
-<!-- 구현 영상 미리보기 (비워 둠) -->
-<a href=""><img src="" width="420" alt=""></a>
+<img src="docs/images/gangdo_main.png" width="860" alt="강도 몰래 신고 메인 이미지">
 
 </div>
 
@@ -55,6 +51,12 @@
 ---
 
 ## 한눈에 보기
+
+<div align="center">
+
+<img src="docs/images/gangdo_main_2.png" width="900" alt="MUTE 버튼 4번으로 강도 몰래 신고하는 4컷 만화">
+
+</div>
 
 1. 운행을 시작할 때 앱을 한 번 실행해 둡니다. 이후에는 재부팅해도 자동으로 시작됩니다.
 2. 기사는 평소처럼 내비게이션 등 다른 앱을 사용합니다.
@@ -136,9 +138,10 @@ adb shell settings put secure accessibility_enabled 1
 
 앱 화면 맨 위에 **"버튼 감지 서비스: 켜짐"**(초록)이 보이면 준비된 것입니다. 앱의 "접근성 설정 열기" 버튼으로도 설정 화면을 열 수 있지만, Pleos 설정 화면에서 직접 켜는 경로는 아직 확인하지 못했습니다.
 
-### 4. 처음 실행하면 사용법 안내가 나옵니다
+### 4. 사용법 안내
 
-앱을 처음 열면 6쪽짜리 사용법 안내가 자동으로 나옵니다. 이후에는 앱 첫 화면의 **도움말** 버튼으로 다시 볼 수 있습니다.
+앱을 처음 열면 6쪽짜리 사용법 안내가 자동으로 나옵니다.  
+이후에는 앱 첫 화면의 **도움말** 버튼으로 다시 볼 수 있습니다.
 
 <table>
 <tr>
